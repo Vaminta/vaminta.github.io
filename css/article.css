@@ -1,0 +1,25 @@
+
+#meta-data-container{
+	/*background-color: #f0ffe4;*/
+	max-width: 20%;
+	padding: 1% 0% 1% 1%;
+	border-style: dashed;
+	border-width: 2px 0px 2px 0px;
+	border-color: #d7d7d7;
+}
+
+#meta-data-container img{
+	padding-right: 10px;
+}
+
+.md-tag{
+	background-color: #cbeeff;
+	border-radius: 3px;
+	padding: 0px 3px 0px 3px;
+}
+
+@media (max-width:600px)  {
+	#meta-data-container{
+		max-width: 90%;
+	}
+}
