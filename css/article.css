@@ -1,3 +1,7 @@
+main p{
+	margin-left: 2%;
+	margin-right: 2%;
+}
 
 #meta-data-container{
 	/*background-color: #f0ffe4;*/
@@ -15,11 +19,35 @@
 .md-tag{
 	background-color: #cbeeff;
 	border-radius: 3px;
-	padding: 0px 3px 0px 3px;
+	padding: 0px 4px 0px 4px;
+	margin-right: 4px;
+}
+
+.pros-cons-box{
+	background-color: #FCFCFC;
+	width: 40%;
+	padding: 5px;
+	overflow: auto;
+}
+
+.pros-cons-box > div:first-child {
+	background-color: #e9ffb9;
+	width: 50%;
+	float: left;
+}
+
+.pros-cons-box > div:nth-child(2) {
+	background-color: #ffe5e5;
+	width: 50%;
+	float: left;
 }
 
 @media (max-width:600px)  {
 	#meta-data-container{
 		max-width: 90%;
+	}
+	
+	.pros-cons-box{
+		width: auto;
 	}
 }
