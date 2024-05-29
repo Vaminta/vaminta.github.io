@@ -41,6 +41,12 @@ header button:hover{
 	border-color: #acf160;
 }
 
+header button:disabled{
+	
+	background: linear-gradient(to bottom, #cbeeff 75%, #ffffff);
+	border: 0px;
+}
+
 main{
 	position: relative;
 	left:20%;

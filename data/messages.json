@@ -1,0 +1,28 @@
+{
+	"generic":[
+		{
+			"id": 1,
+			"message": "Is this feature even implemented yet?"
+		},
+		{
+			"id": 2,
+			"message": "\"Not all those who wander are lost\" - J.R.R Tolkien"
+		},
+		{
+			"id": 3,
+			"message": "Python, although versatile, is aesthetically unpleasant"
+		},
+		{
+			"id": 4,
+			"message": "Have you tried chocolate coated coffee beans?"
+		},
+		{
+			"id": 5,
+			"message": "Have you tried turning it off and on again?"
+		},
+		{	
+			"id": 6,
+			"message": "Is not \"is not\" a weird expansion of \"isn't\"?"
+		}
+	]
+}

@@ -15,8 +15,19 @@ function receiveMessage(event){
 	}
 }
 
-function iframeLoad(el){
-	if(!el.src) return;
+function setIframeSrc(){
+	const search = window.location.search;
+	if(!search) console.error("no target src");
+	const params = new URLSearchParams(search.substr(1));
+	const target = params.get("target");
+	const src = "content/"+target+".html";
+	console.log("src: "+src);
+	artiframe.src = src;
+}
+
+//called by iframe when onLoad fired
+function iframeOnload(el){
+	//if(!el.src) return;
 	receivedContact = false;
 	window.setTimeout(function(){
 		if(!receivedContact){
@@ -30,20 +41,14 @@ function setIframeHeight(){
 	//get height of header
 	const headHeight = document.getElementsByTagName("header")[0].offsetHeight;
 	const availableHeight = window.innerHeight - headHeight;
-	artiframe.style.height = availableHeight-10+"px";
+	artiframe.style.height = availableHeight-18+"px"; //account for footer (not exact just yet - prob closer to 18px)
 }
 
 function initialise(){
 	artiframe = document.getElementById("article-iframe");
-	artiframe.onload = function(){iframeLoad(this)};
+	artiframe.onload = function(){iframeOnload(this)};
 	setIframeHeight();
-	const search = window.location.search;
-	if(!search) console.error("no target src");
-	else{
-		const src = "content/"+search.substr(1)+".html";
-		console.log("src: "+src);
-		artiframe.src = src;
-	}
+	setIframeSrc();
 	window.addEventListener("message", receiveMessage, false);
 }
 

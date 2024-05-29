@@ -1,0 +1,42 @@
+.flex{
+	display: flex;
+	border-radius: 4px;
+}
+
+#message-of-the-day{
+	left: 2%;
+	width: 96%;
+	position: relative;
+	text-align: center;
+	background-color: #F1F1F1;
+	padding: 4px;
+	border-radius: 4px;
+}
+
+#motd-title-box{
+	padding: 0.5%;
+}
+
+#motd-title{
+	width: 100%;
+	
+}
+
+#motd-icon-cont{
+	width: 64px;
+	height: 64px;
+	float: left;
+	background-color: #dcffbc;
+}
+
+#motd-message-cont{
+	float: left;
+	flex-grow: 1;
+	background: linear-gradient(to right,#dcffbc,#f2ffe6 5%, #ffffff 10%);
+	display: block;
+}
+
+#motd-message-span{
+	margin-top: 20px;
+	display: block;
+}
