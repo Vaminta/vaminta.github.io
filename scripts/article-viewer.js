@@ -19,7 +19,7 @@ function setIframeSrc(){
 	const search = window.location.search;
 	if(!search) console.error("no target src");
 	const params = new URLSearchParams(search.substr(1));
-	const target = params.get("target");
+	const target = params.get("tsrc"); //target src
 	const src = "content/"+target+".html";
 	console.log("src: "+src);
 	artiframe.src = src;

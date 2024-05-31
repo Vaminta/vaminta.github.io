@@ -1,6 +1,8 @@
 main p{
 	margin-left: 2%;
 	margin-right: 2%;
+	font-family: ariel, sans-serif;
+	line-height: 1.5;
 }
 
 #meta-data-container{
@@ -27,6 +29,8 @@ main p{
 	background-color: #FCFCFC;
 	width: 60%;
 	padding: 5px;
+	font-family: ariel, sans-serif;
+	line-height: 1.2;
 	overflow: auto;
 }
 

@@ -17,6 +17,13 @@ function processMOTD(messages){
 	console.log(generics);
 }
 
+function setMinHeight(){
+	const headHeight = document.getElementsByTagName("header")[0].offsetHeight;
+	const availableHeight = window.innerHeight - headHeight;
+	let main = document.getElementsByTagName("main")[0];
+	main.style.minHeight = availableHeight-16+"px"; //account for footer (not exact just yet - prob closer to 18px)
+}
+
 function getMessages(){
 	fetch("data/messages.json").then(function(response){
 		return response.json();
@@ -31,6 +38,7 @@ function getMessages(){
 }
 
 function initialise(){
+	setMinHeight();
 	getMessages();
 }
 
@@ -39,4 +47,4 @@ var interval = setInterval(function(){
 		clearInterval(interval);
 		initialise();
 	}
-},500);
+},250);

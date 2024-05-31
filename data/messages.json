@@ -10,7 +10,7 @@
 		},
 		{
 			"id": 3,
-			"message": "Python, although versatile, is aesthetically unpleasant"
+			"message": "Python, although versatile, is aesthetically unpleasant. Change my mind."
 		},
 		{
 			"id": 4,
@@ -23,6 +23,40 @@
 		{	
 			"id": 6,
 			"message": "Is not \"is not\" a weird expansion of \"isn't\"?"
+		},
+		{
+			"id": 7,
+			"message": "\"Comparison is the theif of joy\" - T. Roosevelt"
+		},
+		{	
+			"id": 8,
+			"message": "Did you know: the average person says approximately 2GB worth of words in their lifetime."
+		},
+		{
+			"id": 9,
+			"message": "Why not spend a warm summer night staring at the stars?"
+		},
+		{
+			"id": 10,
+			"message": "JSON files are rather convenient, huh."
+		},
+		{
+			"id": 11,
+			"message": "Slow and steady wins the race, but not too slow, it needs to be done in a lifetime."
+		}
+	],
+	"dated":[
+		{
+			"day": 1,
+			"month": 0,
+			"id": "d10",
+			"message": "Happy new year!"
+		},
+		{
+			"day": 25,
+			"month": 11,
+			"id": "d2511",
+			"message": "Merry Christmas!"
 		}
 	]
 }
