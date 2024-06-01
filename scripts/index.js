@@ -8,10 +8,8 @@ function randomInt(min,max){
 }
 
 function processMOTD(messages){
-	console.log("hi");
 	const generics = messages.generic;
 	const randomIndex = randomInt(0,generics.length-1);
-	console.log(randomIndex);
 	const chosen = generics[randomIndex];
 	document.querySelector("#motd-message-span").innerHTML = chosen.message;
 	console.log(generics);
@@ -33,13 +31,14 @@ function getMessages(){
 		processMOTD(messages);
 	})
 	.catch(function(error){
-		
+		document.querySelector("#motd-message-span").innerHTML = "Failed to get message :( ";
+		console.error("Message of the day error: "+error);
 	});
 }
 
 function initialise(){
 	setMinHeight();
-	getMessages();
+	setTimeout(getMessages, 1000);
 }
 
 var interval = setInterval(function(){

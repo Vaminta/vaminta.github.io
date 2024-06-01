@@ -1,6 +1,6 @@
 main p{
 	margin-left: 2%;
-	margin-right: 2%;
+	margin-right: 6%;
 	font-family: ariel, sans-serif;
 	line-height: 1.5;
 }
@@ -47,6 +47,12 @@ main p{
 }
 
 @media (max-width:600px)  {
+	
+	main p{
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	
 	#meta-data-container{
 		max-width: 90%;
 	}

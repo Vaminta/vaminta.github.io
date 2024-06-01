@@ -18,6 +18,7 @@ header nav{
 	background-color: #fff;
 	padding-top: 4px;
 	border-radius: 3px 3px 0px 0px;
+	transition: 0.5s;
 }
 
 header button{
@@ -53,6 +54,7 @@ main{
 	width: 60%;
 	background-color: #ffffff;
 	margin-left: 0px;
+	transition: 0.5s;
 }
 
 main h2{
@@ -123,15 +125,31 @@ footer{
 	color: #fff;
 }
 
-@media (max-width:600px)  {
+@media (max-width:620px)  {
 	main{
 		left: 0%;
 		width: 100%;
+		transition: 0.5s;
 	}
 	
 	header nav{
-	width:100%;
-	left: 0%;
+		width:100%;
+		left: 0%;
+		transition: 0.5s;
+	}
+
 }
 
+@media (width > 1920px){
+	main{
+		width: 44%;
+		left: 28%;
+		transition: 0.5s;
+	}
+	
+	header nav{
+		width: 44%;
+		left: 28%;
+		transition: 0.5s;
+	}
 }
