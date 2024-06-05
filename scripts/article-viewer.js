@@ -12,6 +12,11 @@ function receiveMessage(event){
 		if(data.type=="meta-data"){
 			document.getElementsByTagName("title")[0].innerHTML = data.value.title;
 		}
+		let ack = {
+			sender: "viewer",
+			type: "acknowledgement"
+		};
+		artiframe.contentWindow.postMessage(ack,"*");
 	}
 }
 

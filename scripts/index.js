@@ -12,6 +12,9 @@ function processMOTD(messages){
 	const randomIndex = randomInt(0,generics.length-1);
 	const chosen = generics[randomIndex];
 	document.querySelector("#motd-message-span").innerHTML = chosen.message;
+	let iconCont = document.querySelector("#motd-icon-cont");
+	iconCont.getElementsByTagName("img")[0].style.display = "none";
+	iconCont.getElementsByTagName("img")[1].style.display = "block";
 	console.log(generics);
 }
 
@@ -38,7 +41,7 @@ function getMessages(){
 
 function initialise(){
 	setMinHeight();
-	setTimeout(getMessages, 1000);
+	setTimeout(getMessages, 1500);
 }
 
 var interval = setInterval(function(){

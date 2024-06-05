@@ -123,6 +123,7 @@ footer{
 .blue-border-button:hover{
 	background-color: #83d0f6;
 	color: #fff;
+	cursor: pointer;
 }
 
 @media (max-width:620px)  {

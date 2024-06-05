@@ -47,6 +47,34 @@
 		{
 			"id": 12,
 			"message": "This website does not support the iPad 3<sup>rd</sup> generation. Apologies for the inconvenience."
+		},
+		{
+			"id": 13,
+			"message": "This is message number 13. You can decide if that is unlucky."
+		},
+		{
+			"id": 14,
+			"message": "Fed up of using Microsoft Windows? Give Linux a try!"
+		},
+		{
+			"id": 15,
+			"message": "Consume content translated from another language? Try learning that language!"
+		},
+		{
+			"id": 16,
+			"message": "You can repurpose old Android phones into MP3 players"
+		},
+		{
+			"id": 17,
+			"message": "Papa's Save Manager lets you save your save data for the Papa's series of online games."
+		},
+		{
+			"id": 18,
+			"message": "If you have many active entertainment subscriptions, you can save money by only have one active at a time and organising what you want to watch."
+		},
+		{
+			"id": 19,
+			"message": "So many ideas, so little energy, even when powered by chocolate coffee beans."
 		}
 	],
 	"dated":[
