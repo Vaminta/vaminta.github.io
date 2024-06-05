@@ -56,7 +56,7 @@ aes._checkAck = function(){
 	const newPath = "/vaminta/articles/viewer.html?tsrc="+tsrc;
 	const origin = window.location.origin;
 	window.location.href = origin+newPath;
-}
+};
 
 function receiveMessage(event){
 	let data = event.data;
@@ -65,17 +65,14 @@ function receiveMessage(event){
 	}
 }
 
-function initialise(){
+aes.initialise = function(){
 	article.generateMetadata(article.metadata);
 	aes.postMetadata();
 	window.setTimeout(aes._checkAck,1000);
-}
+};
 
-var interval = setInterval(function(){
-	if(document.readyState=="complete"){
-		clearInterval(interval);
-		initialise();
-	}
-},200);
+window.addEventListener('load', function() {
+    aes.initialise();
+});
 
 window.addEventListener("message", receiveMessage, false);

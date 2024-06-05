@@ -1,0 +1,44 @@
+{
+	"featured": [3,1],
+	"articles":[
+		{
+			"id": 1,
+			"title": "Notification Detox",
+			"description": "Is it time for a notification detox?",
+			"author": "Vaminta",
+			"tags": ["Opinion"],
+			"keywords": [],
+			"content_url": "notification-detox",
+			"date_published": "2024-02-23",
+			"date_updated": "",
+			"visible": true,
+			"words": 0
+		},
+		{
+			"id": 2,
+			"title": "Article Template",
+			"description": "Template article page filled with lorem ipsum text",
+			"keywords": [],
+			"author": "Vaminta",
+			"tags": ["Review","Opinion"],
+			"content_url": "article-template",
+			"date_published": "2024-05-26",
+			"date_updated": "2024-06-05",
+			"visible": false,
+			"words": 0
+		},
+		{
+			"id": 3,
+			"title": "Animal Crossing: New Horizons First Impression",
+			"description": "My initial impressions of playing an animal crossing game",
+			"keywords": [],
+			"author": "Vaminta",
+			"tags": ["Review","Nintendo Switch"],
+			"content_url": "acnh-first-impresssions",
+			"date_published": "2024-05-31",
+			"date_updated": "",
+			"visible": true,
+			"words": 0
+		}
+	]
+}
