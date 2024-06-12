@@ -22,6 +22,9 @@ class ArticleManager {
 		this.json = null;
 		this.aList = null;
 		this.featured = [];
+		
+		//private
+		this._defaultThumb = 0;
 	}
 	
 	_processJSON(json){
@@ -47,7 +50,7 @@ class ArticleManager {
 			.then(function(response){
 				return response.json();
 			})
-			.then(data=>{
+			.then(data=>{ // arrow func = lexical this
 				this.json = this._processJSON(data);
 				this.aList = this.json.articles;
 				this.featured = this.json.featured;
@@ -65,4 +68,58 @@ class ArticleManager {
 		return this.aList;
 	}
 	
+	_compare_rChronPub(art_a, art_b){
+		const a = art_a.date_published.getTime();
+		const b = art_b.date_published.getTime();
+		if(a>b){
+			return -1; //a should come before b (more in the future)
+		}
+		else if(a<b){
+			return 1;
+		}
+		return 0;
+	}
+	
+	sortArticles(sortType, optArticles){
+		let articleArray = this.aList;
+		let compareFn = null;
+		
+		if(sortType=="r-chron-pub"){ //reverse chronological
+			compareFn = this._compare_rChronPub;
+		}
+		articleArray.sort(compareFn);
+		return articleArray;
+	}
+	
+	/*
+	Param: art - article object
+	Returns: (object) - contains 3 params: src (string), width (int), height (int)
+	*/
+	getThumbnail(art){
+		let thumbnail = {
+			src: "",
+			width: 1280,
+			height: 720
+		};
+		if(this.status!="ready" || !art || art==null) return;
+		const article = art;
+		
+		//check if custom thumbnail specified
+		if(!article.thumb || article.thumb.length<1){ //get default thumbnail
+			const default_thumbs = this.json.default_thumbs.list;
+			const thumb = default_thumbs[this._defaultThumb % default_thumbs.length];
+			this._defaultThumb++;
+			thumbnail.src = this.json.default_thumbs.root_dir + thumb.src;
+			thumbnail.width = thumb.width;
+			thumbnail.height = thumb.height;
+		}
+		return thumbnail;
+	}
+	
+	dateToString(date){
+		const shortMonthsEn = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Nov","Dec"];
+		let dateString = date.getDate().toString();
+		dateString += " " + shortMonthsEn[date.getMonth()] + " " + date.getFullYear();
+		return dateString;
+	}
 }
