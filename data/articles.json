@@ -1,20 +1,35 @@
 {
-	"featured": [3,1],
+	"featured": [8,6],
 	"default_thumbs": {
-		"root_dir": "images/article-default-thumbs/",
+		"root_dir": "images/article/thumbs/default/",
 		"list": [
 			{
+				"id": 6,
 				"src": "article-dbg-2-360.jpg",
 				"width": 640,
 				"height": 360
 			},
 			{
+				"id": 7,
 				"src": "article-dbg-3-360.jpg",
 				"width": 640,
 				"height": 360
 			},
 			{
+				"id": 8,
 				"src": "article-dthumb-4-360.jpg",
+				"width": 640,
+				"height": 360
+			},
+			{
+				"id": 9,
+				"src": "article-dthumb-5-360.jpg",
+				"width": 640,
+				"height": 360
+			},
+			{
+				"id": 10,
+				"src": "article-dthumb-6-360.jpg",
 				"width": 640,
 				"height": 360
 			}
@@ -43,7 +58,7 @@
 			"date_published": "2024-05-26",
 			"date_updated": "2024-06-05",
 			"visible": false,
-			"words": 0,
+			"words": 1012,
 			"thumb": ""
 		},
 		{

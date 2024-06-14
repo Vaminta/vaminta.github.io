@@ -21,7 +21,7 @@ header nav{
 	transition: 0.5s;
 }
 
-header button{
+header nav button{
 	color: #4b9bc3;
 	background-color: #cbeeff;
 	border-style: solid;
@@ -33,16 +33,16 @@ header button{
 	cursor: pointer;
 }
 
-header button:first-child{
+header nav a:first-child > button{
 	margin-left: 4px;
 }
 
-header button:hover{
+header nav button:hover{
 	border-width: 0px 0px 2px 0px;
 	border-color: #acf160;
 }
 
-header button:disabled{
+header nav button:disabled{
 	
 	background: linear-gradient(to bottom, #cbeeff 75%, #ffffff);
 	border: 0px;

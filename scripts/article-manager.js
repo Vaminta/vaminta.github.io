@@ -24,7 +24,7 @@ class ArticleManager {
 		this.featured = [];
 		
 		//private
-		this._defaultThumb = 0;
+		this._defaultThumb = 2;
 	}
 	
 	_processJSON(json){
@@ -68,11 +68,44 @@ class ArticleManager {
 		return this.aList;
 	}
 	
+	getById(id,optArticles){
+		let articles = this.aList;
+		if(optArticles) articles = optArticles;
+		
+		let foundArticle = null;
+		
+		for(let i=0; i<articles.length; i++){ //linear search through
+			if(articles[i].id == id){
+				foundArticle = articles[i];
+				break;
+			}
+		}
+		
+		return foundArticle;
+	}
+	
+	getFeatured(){
+		const featured = this.json.featured; 
+		let featuredList= [];
+		const articles = this.aList;
+		
+		for(let n=0; n<featured.length; n++){
+			for(let i=0; i<articles.length; i++){
+				if(articles[i].id == featured[n]){
+					featuredList.push(articles[i]);
+					break;
+				}
+			}
+		}
+		
+		return featuredList;
+	}
+	
 	_compare_rChronPub(art_a, art_b){
 		const a = art_a.date_published.getTime();
 		const b = art_b.date_published.getTime();
 		if(a>b){
-			return -1; //a should come before b (more in the future)
+			return -1; //a should come before b (bc more in the future)
 		}
 		else if(a<b){
 			return 1;
