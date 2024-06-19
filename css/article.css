@@ -5,6 +5,15 @@ main p{
 	line-height: 1.5;
 }
 
+main img{
+	max-width: 100%;
+	height: auto;
+}
+
+main figcaption{
+	font-family: italic smaller sans-serif;
+}
+
 #meta-data-container{
 	/*background-color: #f0ffe4;*/
 	max-width: 20%;
