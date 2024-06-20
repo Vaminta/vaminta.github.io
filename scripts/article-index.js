@@ -2,14 +2,22 @@ function initialisey(){
 	articleManager = new ArticleManager();
 	articleManager.fetchArticles()
 		.then(()=>{
-			console.log(articleManager);
 			genArtHTML(articleManager);
 			}
 		);
 }
 
 function handleArticleClick(el){
-	console.log(el);
+	const etsrc = el.getAttribute("data-tsrc");
+	if(!etsrc || etsrc.length < 3){ //problemo!
+		console.error("Article contained no tsrc data");
+		return;
+	}
+	let params = {
+		tsrc: etsrc
+	};
+	
+	aes.loadArticle(params);
 }
 
 function genArtHTML(am){

@@ -39,7 +39,17 @@ aes.postMetadata = function(){
 	window.parent.postMessage(data,"*");
 };
 
-
+aes.loadArticle = function(params){
+	if(!params.tsrc) return;
+	let request = {
+		sender: "content-page",
+		type: "load-article",
+		value: {
+			tsrc: params.tsrc
+		}
+	}
+	window.parent.postMessage(request,"*");
+}
 
 aes._checkAck = function(){
 	if(aes.acknowledgeCount>0) return;

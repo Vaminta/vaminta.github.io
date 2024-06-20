@@ -18,11 +18,20 @@ function receiveMessage(event){
 		if(data.type=="meta-data"){
 			document.getElementsByTagName("title")[0].innerHTML = data.value.title;
 		}
+		if(data.type=="load-article"){
+			const tsrc = data.value.tsrc;
+			let urlParams = new URLSearchParams(window.location.search.substr(1));
+			urlParams.set("tsrc", tsrc);
+			window.location.search = urlParams;
+			artViewer.init();
+			
+		}
 		let ack = {
 			sender: "viewer",
 			type: "acknowledgement"
 		};
 		artViewer.artiframe.contentWindow.postMessage(ack,"*");
+		
 	}
 }
 
@@ -54,7 +63,8 @@ function iframeOnload(el){
 	artViewer.receivedContact = false;
 	window.setTimeout(function(){
 		if(!artViewer.receivedContact){
-			alert("no contact received!");
+			//alert("no contact received!");
+			window.location.href = window.location.origin + window.location.pathname;
 		}
 	},2000);
 	

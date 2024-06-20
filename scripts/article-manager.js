@@ -24,7 +24,7 @@ class ArticleManager {
 		this.featured = [];
 		
 		//private
-		this._defaultThumb = 2;
+		this._defaultThumb = 0;
 	}
 	
 	_processJSON(json){
