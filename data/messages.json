@@ -87,6 +87,14 @@
 		{
 			"id": 22,
 			"message": "If you live in the UK, you need a CPH number to keep sheep (in your garden)."
+		},
+		{
+			"id": 23,
+			"message": "Wins are only ever good if you sometimes lose"
+		},
+		{
+			"id": 24,
+			"message": "You only know what you don't know when you are knowledgeable enough to be aware of what you don't know"
 		}
 	],
 	"dated":[
