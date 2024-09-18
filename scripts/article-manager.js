@@ -10,9 +10,9 @@ class ArticleManager {
 		
 		if(!jsonURL){
 			let origin = window.location.origin;
-			const relativePath = "data/articles.json";
+			const relativePath = "/data/articles.json";
 			if(window.location.pathname.substr(1,7)=="vaminta"){ //internal localhost server testing i.e. 192.168.*.***/vaminta/ is host
-				origin += "/vaminta/";
+				origin += "/vaminta";
 			}
 			jsonURL = origin+relativePath;
 		}
