@@ -25,7 +25,7 @@ function genArtHTML(am){
 	const articles = am.sortArticles("r-chron-pub");
 	
 	for(let i=0; i<articles.length; i++){
-		//if(!articles[i].visible) continue;
+		if(!articles[i].visible) continue;
 		let articleBox = document.createElement("div");
 		articleBox.classList = "article-box ";
 		articleBox.dataset.tsrc = articles[i].content_url;

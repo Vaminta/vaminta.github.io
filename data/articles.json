@@ -73,6 +73,19 @@
 			"visible": true,
 			"words": 0,
 			"thumb": ""
+		},
+		{
+			"id": 9,
+			"title": "New Switch Leaks: Initial Impressions",
+			"strapline": "My first thoughts after information has leaked regarding Nintendo's next console.",
+			"author": "Vaminta",
+			"tags": ["Technology","Nintendo"],
+			"content_url": "new-switch-leak-initial-impressions",
+			"date_published": "2024-09-18",
+			"date_updated": "",
+			"visible": true,
+			"words": 0,
+			"thumb": ""
 		}
 	]
 }
