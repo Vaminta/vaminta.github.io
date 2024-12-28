@@ -86,6 +86,20 @@
 			"visible": true,
 			"words": 0,
 			"thumb": ""
+		},
+		{
+			"id": 10,
+			"title": "Hay Day Tips",
+			"strapline": "Tips to help you progress through the popular mobile game.",
+			"author": "Vaminta",
+			"tags": ["Tips","Hay Day"],
+			"content_url": "hayday-tips-1",
+			"date_published": "2024-11-28",
+			"date_updated": "",
+			"visible": true,
+			"words": 0,
+			"thumb": ""
 		}
+			
 	]
 }
