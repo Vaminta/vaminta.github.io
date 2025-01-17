@@ -99,6 +99,19 @@
 			"visible": true,
 			"words": 0,
 			"thumb": ""
+		},
+		{
+			"id": 11,
+			"title": "Mt. Tenkadai",
+			"strapline": "Exploring Mt. Tenkadai",
+			"author": "Vaminta",
+			"tags": ["Japan","Adventure"],
+			"content_url": "mt-tenkadai",
+			"date_published": "2025-01-17",
+			"date_updated": "",
+			"visible": true,
+			"words": 0,
+			"thumb": ""
 		}
 			
 	]
