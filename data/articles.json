@@ -1,7 +1,8 @@
 {
 	"featured": [11,8],
-	"default_thumbs": {
-		"root_dir": "images/article/thumbs/default/",
+	"thumbs": {
+		"defaults": [6,7,8,9,10],
+		"def_root_dir": "images/article/thumbs/default/",
 		"list": [
 			{
 				"id": 6,

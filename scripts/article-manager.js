@@ -27,16 +27,52 @@ class ArticleManager {
 		this._defaultThumb = 0;
 	}
 	
+	_getThumbData(id, json){
+		if(!json) json = this.json;
+		const thumbs = json.thumbs.list;
+		for(let i=0;i<thumbs.length;i++){
+			if(thumbs[i].id == id){
+				return thumbs[i];
+			}
+		}
+		return -1;//error, cannot find
+	}
+	
 	_processJSON(json){
 		//when json imported convert date strings into date objects
+		const defThumbs = json.thumbs.defaults;
+		//const dThumbDir = json.thumbs.def_root_dir
 		for(let i=0; i<json.articles.length; i++){
 			json.articles[i].date_published = new Date(json.articles[i].date_published);
 			if(json.articles[i].date_updated.length>1){
 				json.articles[i].date_updated = new Date(json.articles[i].date_updated);
 			}
-			else{
+			else{ //set the date updated to the same as published if not updated
 				json.articles[i].date_updated = new Date(json.articles[i].date_published);
 			}
+			
+			//new 2025 - set thumbnail data
+			let cArticle = json.articles[i]; //current article
+			let thumbnail = {
+				src: "",
+				width: 1280,
+				height: 720
+			};
+			if(!cArticle.visible) continue; //add default thumb for invisible in future
+			if(!cArticle.thumb || cArticle.thumb.length<1){ //custom thumb not set - set default
+				const thumbID = defThumbs[this._defaultThumb % (defThumbs.length+0)]; //ID of def thumb to get
+				const thumbData = this._getThumbData(thumbID,json);
+				console.log(thumbData);
+				this._defaultThumb++;
+				thumbnail.src = json.thumbs.def_root_dir + thumbData.src;
+				thumbnail.width = thumbData.width;
+				thumbnail.height = thumbData.height;
+			}
+			else{ //custom thumb id specified
+				
+			}
+			
+			cArticle.thumbnail = thumbnail;
 		}
 		return json;
 	}
@@ -129,6 +165,7 @@ class ArticleManager {
 	Returns: (object) - contains 3 params: src (string), width (int), height (int)
 	*/
 	getThumbnail(art){
+		return art.thumbnail;
 		let thumbnail = {
 			src: "",
 			width: 1280,
