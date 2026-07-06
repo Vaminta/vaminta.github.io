@@ -126,6 +126,19 @@
 			"visible": true,
 			"words": 0,
 			"thumb": ""
+		},
+		{
+			"id": 13,
+			"title": "Here Today, Gone Tomorrow",
+			"strapline": "How Software as a Service Makes Software Preservation a Nightmare",
+			"author": "Vaminta",
+			"tags": ["Fluff","Opinion"],
+			"content_url": "here-today-gone-tomorrow",
+			"date_published": "2025-11-07",
+			"date_updated": "",
+			"visible": true,
+			"words": 0,
+			"thumb": ""
 		}
 			
 	]
