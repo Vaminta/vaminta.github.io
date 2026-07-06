@@ -187,7 +187,7 @@ class ArticleManager {
 	}
 	
 	dateToString(date){
-		const shortMonthsEn = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Nov","Dec"];
+		const shortMonthsEn = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 		let dateString = date.getDate().toString();
 		dateString += " " + shortMonthsEn[date.getMonth()] + " " + date.getFullYear();
 		return dateString;
