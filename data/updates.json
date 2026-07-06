@@ -1,0 +1,7 @@
+[
+	{
+		"date": "2026-07-06",
+		"p": "Introducing this updates service! See how the Vaminta website is updated as time progresses. The service doesn't yet have a page to view the updates - this will be added shortly.",
+		"ul": ["Fixed the article manager powering the articles index so that months after September are correct.","Added a new article: \"Here Today, Gone Tomorrow\" the content was written last year.","Fixed the article embed service so that redirects are correctly routed and the \"redir\" =0 parameter is respected","Added 5 new MOTDs (28-32)"]
+	}
+]
