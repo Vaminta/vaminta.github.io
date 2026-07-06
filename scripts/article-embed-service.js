@@ -53,8 +53,9 @@ aes.loadArticle = function(params){
 
 aes._checkAck = function(){
 	if(aes.acknowledgeCount>0) return;
-	const params = new URLSearchParams(window.location.toString().substr(1));
+	const params = new URLSearchParams(window.location.search.toString().substr(1));
 	const redir = params.get("redir");
+	if(redir=="0") return;
 	
 	const path = window.location.pathname;
 	const indicator = "content/";
