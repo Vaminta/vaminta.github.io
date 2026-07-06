@@ -64,8 +64,8 @@ aes._checkAck = function(){
 	if(file.length<1) file = "index.html";
 	const tsrc = file.substring(0, file.indexOf("."));
 	
-	const newPath = "/vaminta/articles/viewer.html?tsrc="+tsrc;
-	const origin = window.location.origin;
+	const newPath = "/articles/viewer.html?tsrc="+tsrc;
+	const origin = window.location.href.substr(0, window.location.href.indexOf("/articles")); //window.location.origin isn't as robust
 	window.location.href = origin+newPath;
 };
 
