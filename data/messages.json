@@ -107,6 +107,31 @@
 		{
 			"id": 27,
 			"message": "Amy Winehouse could have made an excellent bond theme."
+		},
+		{
+			"id": 28,
+			"date": "2025-02-06",
+			"message": "The Japanese keyboard is pretty good, except for the half width backspace key which I always miss"
+		},
+		{
+			"id": 29,
+			"date": "2025-02-07",
+			"message": "The Nintendo Switch 2 will face a lot more competition than the original Switch did at launch."
+		},
+		{
+			"id": 30,
+			"date": "2025-02-13",
+			"message": "Pigeons can remember human faces and show affection back."
+		},
+		{
+			"id": 31,
+			"date": "2025-04-08",
+			"message": "Japan is addicted to vitamin c!"
+		},
+		{
+			"id": 32,
+			"date": "2025-04-16",
+			"message": "It's about time bycicles got automatic transmissions!"
 		}
 	],
 	"dated":[
