@@ -2,6 +2,9 @@ body{
 	margin: 0px;
 	background-color: #f4f7f9;
 	font-family: Ariel, sans-serif;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	min-height: 100vh;
 }
 
 header{
