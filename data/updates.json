@@ -7,8 +7,8 @@
 	},
 	{
 		"date": "2026-08-23",
-		"p": "",
-		"ul": ["Added a new article: \"Will the Steam Machine Survive?\" the content was written last year."],
-		"mul": [""]
+		"p": "Added many new menu bar buttons. The software button was there previously but was non-functional. The content for the new pages will be added in the future.",
+		"ul": ["Added new \"Software\", \"Updates\" and \"Help\" buttons.","Added a new article: \"Will the Steam Machine Survive?\" the content was written last year."],
+		"mul": ["Adjusted article viewer page so the cursor turns into a pointer when hovering over article title or thumbnail."]
 	}
 ]
