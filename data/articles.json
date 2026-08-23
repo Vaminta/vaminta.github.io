@@ -139,6 +139,19 @@
 			"visible": true,
 			"words": 0,
 			"thumb": ""
+		},
+		{
+			"id": 14,
+			"title": "Will the Steam Machine Survive?",
+			"strapline": "How will Valves new hardware hold up?",
+			"author": "Vaminta",
+			"tags": ["Hardware","Steam"],
+			"content_url": "will-the-steam-machine-survive",
+			"date_published": "2025-12-12",
+			"date_updated": "",
+			"visible": true,
+			"words": 0,
+			"thumb": ""
 		}
 			
 	]
