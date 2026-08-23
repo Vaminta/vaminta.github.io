@@ -21,6 +21,7 @@
 .article-title{
 	font-size: 24px;
 	font-family: ariel, sans-serif;
+	cursor: pointer;
 }
 
 .article-tag{
@@ -35,7 +36,7 @@
 }
 
 .article-thumb-cont{
-	
+	cursor: pointer;
 	margin-right: 1%;
 	width: 256px;
 	height: 144px;
