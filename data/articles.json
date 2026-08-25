@@ -152,6 +152,19 @@
 			"visible": true,
 			"words": 0,
 			"thumb": ""
+		},
+		{
+			"id": 15,
+			"title": "Introducing LINE",
+			"strapline": "Japan’s No. 1 Messaging App That’s in Serious Need of a Diet!",
+			"author": "Vaminta",
+			"tags": ["Software","Mobile","Rant"],
+			"content_url": "introducing-line",
+			"date_published": "2026-06-30",
+			"date_updated": "",
+			"visible": true,
+			"words": 0,
+			"thumb": ""
 		}
 			
 	]

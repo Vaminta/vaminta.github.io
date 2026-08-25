@@ -13,16 +13,9 @@ function processMOTD(messages){
 	const chosen = generics[randomIndex];
 	document.querySelector("#motd-message-span").innerHTML = chosen.message;
 	let iconCont = document.querySelector("#motd-icon-cont");
-	iconCont.getElementsByTagName("img")[0].style.display = "none";
+	iconCont.getElementsByTagName("img")[0].style.display = "none"; //loading icon
 	iconCont.getElementsByTagName("img")[1].style.display = "block";
 	console.log(generics);
-}
-
-function setMinHeight(){
-	const headHeight = document.getElementsByTagName("header")[0].offsetHeight;
-	const availableHeight = window.innerHeight - headHeight;
-	let main = document.getElementsByTagName("main")[0];
-	main.style.minHeight = availableHeight-16+"px"; //account for footer (not exact just yet - prob closer to 18px)
 }
 
 function getMessages(){
@@ -40,8 +33,7 @@ function getMessages(){
 }
 
 function initialise(){
-	setMinHeight();
-	setTimeout(getMessages, 1500);
+	setTimeout(getMessages, 200);
 }
 
 var interval = setInterval(function(){

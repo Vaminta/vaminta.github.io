@@ -10,5 +10,11 @@
 		"p": "Added many new menu bar buttons. The software button was there previously but was non-functional. The content for the new pages will be added in the future.",
 		"ul": ["Added new \"Software\", \"Updates\" and \"Help\" buttons.","Added a new article: \"Will the Steam Machine Survive?\" the content was written last year."],
 		"mul": ["Adjusted article viewer page so the cursor turns into a pointer when hovering over article title or thumbnail."]
+	},
+	{
+		"date": "2026-08-25",
+		"p": "",
+		"ul": ["New article: Introducing Line!"],
+		"mul": ["Fixed broken main menu links on homepage.","Fixed broken tab icon on software, updates and help pages","Removed code adjusting page content height to fill window. Now done with CSS grid.","Decreased MOTD loading wait."]
 	}
 ]

@@ -1,0 +1,7 @@
+//index js
+function setMinHeight(){
+	const headHeight = document.getElementsByTagName("header")[0].offsetHeight;
+	const availableHeight = window.innerHeight - headHeight;
+	let main = document.getElementsByTagName("main")[0];
+	main.style.minHeight = availableHeight-16+"px"; //account for footer (not exact just yet - prob closer to 18px)
+}

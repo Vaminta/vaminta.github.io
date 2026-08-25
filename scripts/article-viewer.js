@@ -70,17 +70,9 @@ function iframeOnload(el){
 	
 }
 
-function setIframeHeight(){
-	//get height of header
-	const headHeight = document.getElementsByTagName("header")[0].offsetHeight;
-	const availableHeight = window.innerHeight - headHeight;
-	artViewer.artiframe.style.height = availableHeight-18+"px"; //account for footer (not exact just yet - prob closer to 18px)
-}
-
 artViewer.init = function(){
 	artViewer.artiframe = document.getElementById("article-iframe");
 	artViewer.artiframe.onload = function(){iframeOnload(this)};
-	setIframeHeight();
 	artViewer.getUrlParams();
 	artViewer.setIframeSrc();
 	window.addEventListener("message", receiveMessage, false);
